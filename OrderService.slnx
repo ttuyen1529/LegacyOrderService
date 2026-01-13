@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="src/OrderService.Legacy/LegacyOrderService.csproj" />
+  <Folder Name="/src/">
+    <Project Path="../../../../../../../../Code/Github/LegacyOrderService/src/OrderService.ConsoleApp/OrderService.ConsoleApp.csproj" Id="48885775-85f2-4f8a-8ff0-f9b11023e5f4" />
+    <Project Path="../../../../../../../../Code/Github/LegacyOrderService/src/OrderService.Core/OrderService.Core.csproj" Id="da07d969-9b5a-4d19-82c0-d4792331c71c" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Project Path="../../../../../../../../Code/Github/LegacyOrderService/src/OrderService.Legacy/LegacyOrderService.csproj" />
 </Solution>
