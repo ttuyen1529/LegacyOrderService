@@ -37,7 +37,8 @@ namespace OrderService.ConsoleApp
 
             // Pricing (Strategy)
             services.AddSingleton<IPricingService, PricingService>();
-            services.AddSingleton<IPricingStrategy, BulkDiscountPricingStrategy>();  // optional
+            // Register pricing strategies in order of precedence
+            //services.AddSingleton<IPricingStrategy, BulkDiscountPricingStrategy>();  // optional
             services.AddSingleton<IPricingStrategy, DefaultPricingStrategy>();       // fallback LAST
 
             // Register infrastructure implementations
