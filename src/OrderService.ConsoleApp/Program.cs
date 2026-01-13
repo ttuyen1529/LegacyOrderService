@@ -32,10 +32,12 @@ internal static class Program
         try
         {
             var services = new ServiceCollection();
-            
+
             // App + Core registrations
+            var relativeDbPath = configuration.GetConnectionString("OrdersDb"); // "App_data/orders.db"
+            var fullDbPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, relativeDbPath));
             services.AddOrderService(
-                configuration.GetConnectionString("OrdersDb")
+                $"Data Source={fullDbPath}"
             );
 
             using var sp = services.BuildServiceProvider();
