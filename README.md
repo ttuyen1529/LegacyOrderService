@@ -85,6 +85,13 @@ It will then:
 2. Display order details in the console
 3. Persist the order to the database
 
+## Testing
+Unit tests are included in the `tests/OrderService.Core.Tests` project.
+To run the tests:
+```bash
+dotnet test tests/OrderService.Core.Tests
+```
+
 ---
 
 ## Extending the Solution
